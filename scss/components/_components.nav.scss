@@ -1,0 +1,56 @@
+.c-nav__column {
+  padding: inuit-rem($inuit-global-spacing-unit) 0;
+}
+
+.c-nav-item {
+  padding: inuit-rem($inuit-global-spacing-unit-small) inuit-rem($inuit-global-spacing-unit);
+}
+
+.c-nav__column--main {
+  color: $color-primary;
+  background-color: white;
+  .c-nav-item:hover,
+  .c-nav-item:focus,
+  .c-nav-item--active {
+    background-color: $color-black;
+    color: $color-secondary;
+  }
+  .c-nav-item {
+    font-size: 1.2rem;
+  }
+}
+.c-nav__column--second {
+  background-color: $color-black;
+  color: $color-secondary;
+  .c-nav-item:hover,
+  .c-nav-item:focus,
+  .c-nav-item--active {
+    background-color: black;
+    color: white;
+  }
+}
+.c-nav__column--third {
+  background-color: black;
+  color: white;
+  .c-nav-item:hover,
+  .c-nav-item:focus,
+  .c-nav-item--active {
+    background-color: white;
+    color: $color-secondary;
+  }
+}
+.c-nav__column--last {
+  background-color: white;
+  color: black;
+  .c-nav-item:hover,
+  .c-nav-item:focus,
+  .c-nav-item--active {
+    background-color: $color-lightest-grey;
+  }
+}
+.c-nav-item__link {
+  font-weight: 600;
+}
+.c-nav-item__description {
+  font-weight: 300;
+}

@@ -1,0 +1,20 @@
+.c-back-to-top {
+  position: fixed;
+  bottom: inuit-rem($inuit-global-spacing-unit);
+  right: inuit-rem($inuit-global-spacing-unit);
+  z-index: 9999;
+  text-align: center;
+  line-height: 30px;
+  color: $color-primary;
+  cursor: pointer;
+  text-decoration: none;
+  transition: opacity 0.2s ease-out;
+  opacity: 0;
+  display: inline-block;
+}
+.c-back-to-top:hover i{
+  color: black;
+}
+.c-back-to-top.show {
+  opacity: 1;
+}

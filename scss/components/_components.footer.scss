@@ -1,0 +1,42 @@
+.c-footer {
+  background-color: #dedede;
+  color: black;
+
+ /* a {
+    color: $color-secondary;
+  }
+  .c-form {
+   display: block;
+  }
+  .c-form__text {
+    width: 15rem;
+  }*/
+
+}
+.c-footer__heading {
+  color: $color-secondary;
+}
+
+.c-footer-bottom {
+  padding-top:inuit-rem($inuit-global-spacing-unit-large);
+  .c-footer-bottom__link {
+    color:$color-lightest-grey;
+    display: inline-block;
+    padding: 0 inuit-rem($inuit-global-spacing-unit);
+  }
+}
+
+.address-text{
+  display: flex;
+  border-left: 1px solid grey;
+  padding: 2rem;
+  img{
+    height: 42px;
+    weight: 27px;
+    margin-right: 0.7em;
+  }
+}
+
+footer .row{
+  align-items: center;
+}

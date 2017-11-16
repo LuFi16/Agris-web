@@ -1,0 +1,7 @@
+@font-face{
+  font-family: "Lato";
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  @include font-definition($lato-path, $lato-version, "Bold");
+}

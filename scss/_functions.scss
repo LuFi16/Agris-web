@@ -1,0 +1,3 @@
+@function color-alpha($original,$alpha) {
+  @return rgba(red($original),green($original),blue($original),$alpha);
+}

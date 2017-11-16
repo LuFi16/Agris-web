@@ -1,0 +1,70 @@
+.c-header-image {
+  //height: 20rem;
+  height: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/pozadi.jpg);// should be optimized image
+  background-color: grey;
+  background-size: cover;
+  @include mq($from: tablet) {
+    background-image: url(../img/pozadi.jpg);
+    background-color: grey;
+  }
+  @include mq($from: wide) {
+    background-image: url(../img/pozadi.jpg);
+    background-color: grey;
+  }
+  color: white;
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+.c-header-image__heading {
+  margin: 0;
+
+  .c-header-image__logo,
+  .c-header-image__text {
+    display: inline-block;
+    padding: inuit-rem($inuit-global-spacing-unit-small);
+    //background-color: color-alpha(white, 0.8);
+  }
+  .c-header-image__text {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    padding: inuit-rem($inuit-global-spacing-unit);
+  }
+  .c-header-image__logo {
+    display: none;
+    @include mq($from: tablet) {
+      display: inline-block;
+    }
+  }
+
+}
+
+.c-header__issn{
+  border: solid 1px white;
+  margin-top: 0.5em;
+  margin-bottom: 5em;
+  padding: 0.5rem;
+}
+.c-header-image__foot{
+  background: white;
+  color: #038000;
+  margin: 0;
+  margin-top: 2em;
+  padding: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  a{
+    text-decoration: none;
+    font-weight: 500;
+    border: 1px solid #038000;
+    padding: 0.3em;
+    margin-left: 0.7em;
+  }
+
+}

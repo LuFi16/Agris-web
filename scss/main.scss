@@ -1,0 +1,180 @@
+/* ==========================================================================
+   INUITCSS
+   ========================================================================== */
+/**
+ * inuitcss, by @csswizardry
+ *
+ * github.com/inuitcss | inuitcss.com
+ */
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Config...............Project-level configuration and feature switches.
+ * Core.................inuitcss’ core and setup settings.
+ * Global...............Project-wide variables and settings.
+ *
+ * TOOLS
+ * Rem..................Tools for converting pixel inputs into their rem
+ *                      equivalents.
+ * Font-size............A mixin which guarantees baseline-friendly line-heights.
+ * Clearfix.............Micro clearfix mixin.
+
+
+ * Hidden...............Mixin for hiding elements.
+ * Sass MQ..............inuitcss’ default media query manager.
+ *
+ * GENERIC
+ * Box-sizing...........Better default `box-sizing`.
+ * Normalize.css........A level playing field using @necolas’ Normalize.css.
+ * Reset................A tiny reset to complement Normalize.css.
+ * Shared...............Sensibly and tersely share some global commonalities
+ *                      (particularly useful when managing vertical rhythm).
+ *
+ * ELEMENTS
+ * Page.................Set up our document’s default `font-size` and
+ *                      `line-height`.
+ * Headings.............Very minimal (i.e. only font-size information) for
+ *                      headings 1 through 6.
+ * Images...............Base image styles.
+ * Tables...............Simple table styles.
+ *
+ * OBJECTS
+ * Wrapper..............Page constraint object.
+ * Layout...............Generic layout module.
+ * Media................Image- and text-like content side by side. The
+ *                      poster-child of OOCSS.
+ * Flag.................Table-layout-based advancement on the Media object.
+ * List-bare............Lists with no bullets or indents.
+ * List-inline..........A list whose items all site in a line.
+ * Box..................Simple boxing abstraction.
+ * Block................Image-on-top-of-text object.
+ * Ratio................A container for maintaining aspect ratio of content.
+ * Crop.................Provide a cropping context for media (images, etc.).
+ * Tables...............Classes for manipulating `table`s.
+ * Pack.................Pack items into available horizontal space.
+ *
+ * COMPONENTS
+ * Buttons..............An example button component, and how it fits into the
+ *                      inuitcss framework.
+ *
+ * UTILITIES
+ * Clearfix.............Bind our clearfix onto a utility class.
+ * Widths...............Simple width helper classes.
+ * Headings.............Reassigning our heading styles to helper classes.
+ * Spacing..............Nudge bits of the DOM around with these spacing
+ *                      classes.
+ * Print................Reset-like styles taken from the HTML5 Boilerplate.
+ * Hide.................Helper classes to hide content
+ */
+// SETTINGS
+@import "settings.config";
+
+$inuit-global-spacing-unit-factor-tiny: 0.35;
+$inuit-global-spacing-unit-factor-large: 1.75;
+$inuit-global-spacing-unit-factor-huge: 3.5;
+@import "../bower_components/inuitcss/settings/settings.core";
+@import "settings.global";
+
+// TOOLS
+@import "../bower_components/inuitcss/tools/tools.rem";
+@import "../bower_components/inuitcss/tools/tools.font-size";
+@import "../bower_components/inuitcss/tools/tools.clearfix";
+@import "../bower_components/inuitcss/tools/tools.hidden";
+$mq-breakpoints: (
+        mobile: $mobile,
+        tablet: $tablet,
+        desktop: $desktop,
+        wide: $wide);
+@import "../bower_components/sass-mq/mq";
+
+
+// GENERIC
+@import "../bower_components/inuitcss/generic/generic.box-sizing";
+@import "../bower_components/inuitcss/generic/generic.normalize";
+@import "../bower_components/inuitcss/generic/generic.reset";
+@import "../bower_components/inuitcss/generic/generic.shared";
+
+// ELEMENTS
+@import "../bower_components/inuitcss/elements/elements.page";
+@import "../bower_components/inuitcss/elements/elements.headings";
+@import "../bower_components/inuitcss/elements/elements.images";
+@import "../bower_components/inuitcss/elements/elements.tables";
+
+// OBJECTS
+//
+// Uncomment and add to this section as necessary.
+//@import "../bower_components/inuitcss/objects/objects.wrapper";
+//@import "../bower_components/inuitcss/objects/objects.layout";
+@import "../bower_components/inuitcss/objects/objects.media";
+//@import "../bower_components/inuitcss/objects/objects.flag";
+@import "../bower_components/inuitcss/objects/objects.list-bare";
+//@import "../bower_components/inuitcss/objects/objects.list-inline";
+//@import "../bower_components/inuitcss/objects/objects.box";
+@import "../bower_components/inuitcss/objects/objects.block";
+//@import "../bower_components/inuitcss/objects/objects.pack";
+//@import "../bower_components/inuitcss/objects/objects.ratio";
+//@import "../bower_components/inuitcss/objects/objects.crop";
+//@import "../bower_components/inuitcss/objects/objects.tables";
+//@import "../bower_components/inuitcss/objects/objects.pack";
+
+// UTILITIES
+@import "../bower_components/inuitcss/utilities/utilities.clearfix";
+//@import "../bower_components/inuitcss/utilities/utilities.widths";
+@import "../bower_components/inuitcss/utilities/utilities.headings";
+@import "../bower_components/inuitcss/utilities/utilities.spacing";
+//@import "../bower_components/inuitcss/utilities/utilities.print";
+@import "../bower_components/inuitcss/utilities/utilities.hide";
+
+//////////////////////////////////////////////////////////////////
+//////CUSTOM//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+
+// FONTS
+$lato-path: "../bower_components/lato-fontface/fonts"; // should be included only used ones in implementation
+@import "../bower_components/lato-fontface/scss/lato"; // should be included only used ones in implementation
+
+// GENRAL
+@import "functions";
+@import "general";
+
+// OBJECTS
+//
+//Set the number of columns.
+$grid-columns: 12;
+//Set the gutter between columns.
+$gutter-width: 0;
+//Set a margin for the container sides.
+$outer-margin: 0;
+$flexboxgrid-max-width: inuit-rem($wide_c);
+//Create or remove breakpoints for your project
+//You can modify, remove or create breakpoints before generate the final CSS.
+$breakpoints: mobile mq-px2em($mobile) mq-px2em($mobile_c),
+tablet mq-px2em($tablet) mq-px2em($tablet_c),
+desktop mq-px2em($desktop) mq-px2em($desktop_c),
+wide mq-px2em($wide) mq-px2em($wide_c);
+@import "../bower_components/flexboxgrid-sass/flexboxgrid";
+// responsive version of inuit flag
+@import "objects.flag";
+
+// COMPONENTS
+//
+// Build and include your project’s UI Compoments here.
+@import "components/components.browserupgrade";
+@import "components/components.page-article";
+@import "components/components.buttons";
+@import "components/components.forms";
+@import "components/components.header";
+@import "components/components.header-image";
+@import "components/components.nav-box";
+@import "components/components.nav";
+@import "components/components.sections";
+@import "components/components.article-box";
+@import "components/components.events";
+@import "components/components.projects-carousel";
+@import "components/components.footer";
+@import "components/components.back-to-top";
+@import "components/components.information-list";
+@import "components/components.sorting";
+@import "components/components.pagination";
+

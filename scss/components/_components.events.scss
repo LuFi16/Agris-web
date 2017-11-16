@@ -1,0 +1,137 @@
+.c-calendar {
+  display: inline-block;
+}
+
+.c-calendar__top {
+  background-color: $color-secondary;
+  padding: inuit-rem($inuit-global-spacing-unit);
+
+  .c-btn--loadmore {
+    font-size: 0.8rem;
+    margin-top: inuit-rem($inuit-global-spacing-unit-small);
+  }
+
+}
+
+.c-calendar__days__table {
+  width: auto;
+  margin: 0 auto;
+}
+
+.c-calendar__days {
+  padding: inuit-rem($inuit-global-spacing-unit-small);
+  background-color: $color-lightest-grey;
+
+}
+
+.c-calendar__month {
+  display: inline-block;
+  color: white;
+  line-height: 4rem;
+  height: 4rem;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0 inuit-rem($inuit-global-spacing-unit-small);
+}
+
+.c-calendar__arrow {
+  display: inline-block;
+  line-height: 4rem;
+  height: 4rem;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: $color-dark-grey;
+}
+
+.c-calendar__week {
+  font-weight: 800;
+  color: $color-darkest-grey;
+  font-size: 1.15rem;
+}
+
+.c-calendar__week--end {
+  color: $color-error;
+}
+
+.c-calendar__day {
+  text-decoration: none;
+  font-weight: 800;
+  color: $color-dark-grey;
+  display: block;
+  font-size: 0.9rem;
+  width: 2.1rem;
+  height: 2.1rem;
+  line-height: 2.1rem;
+  text-align: center;
+}
+
+.c-calendar__day--active {
+  background-color: $color-darkest-grey;
+  color: $color-lightest-grey;
+  border-radius: 50%;
+}
+
+.c-calendar__day--event {
+  background-color: $color-light-grey;
+  border-radius: 50%;
+}
+
+.c-calendar__day--other-month {
+  color: $color-grey;
+}
+
+.c-event {
+  border-radius: 2rem;
+  background-color: $color-lightest-grey;
+  text-transform: uppercase;
+  margin: inuit-rem($inuit-global-spacing-unit-small) 0;
+  float: left;
+  .o-flag__body {
+    padding: inuit-rem($inuit-global-spacing-unit);
+  }
+  .c-btn--secondary--invert {
+    text-transform: uppercase;
+  }
+  @include mq($from: tablet) {
+    margin: inuit-rem($inuit-global-spacing-unit-small) inuit-rem($inuit-global-spacing-unit-tiny);
+    border-radius: 6.5rem;
+    .o-flag__body {
+      padding: inuit-rem($inuit-global-spacing-unit-small);
+    }
+  }
+}
+
+.c-event__round-date {
+  border-radius: 2rem;
+  background-color: $color-light-grey;
+  font-weight: 700;
+  color: $color-secondary;
+  font-size: 1.4rem;
+  padding: 0;
+  display: none;
+  @include mq($from: tablet) {
+    display: table-cell;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 7rem;
+    text-align: center;
+  }
+}
+
+.c-event__heading {
+  font-size: 0.9rem;
+  margin: 0;
+  padding: 0;
+  font-weight: 800;
+}
+
+.c-event__date {
+  font-size:0.85rem;
+  @extend .c-btn--tiny;
+  padding-left: 0;
+  line-height: 1.15rem;
+  vertical-align: middle;
+  font-weight: 800;
+}
+

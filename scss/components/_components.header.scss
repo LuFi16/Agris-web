@@ -1,0 +1,84 @@
+/* ==========================================================================
+   #MAIN HEADER
+   ========================================================================== */
+
+.c-header {
+  overflow: hidden;
+  padding: inuit-rem($inuit-global-spacing-unit-tiny) inuit-rem($inuit-global-spacing-unit-tiny);
+  .c-header__links, .c-form {
+    display: none;
+    align-items: center;
+  }
+
+  @include mq($from: tablet) {
+    .c-header__logo {
+      justify-content: flex-start;
+      & > .c-responsive-toggle {
+        display: none;
+      }
+      .c-header__description {
+        display: inline-block;
+        font-style: italic;
+      }
+    }
+    .c-form {
+      display: flex;
+      order: 3;
+    }
+    .c-header__links {
+      order: 2;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    .c-header__link {
+      padding: inherit;
+      border-bottom: none;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+    }
+  }
+
+}
+
+
+.c-header__link {
+  display: block;
+  color: $color-black;
+  text-decoration: none;
+  padding: inuit-rem($inuit-global-spacing-unit) inuit-rem($inuit-global-spacing-unit-small);
+  border-bottom: 1px solid $color-light-grey;
+}
+
+.c-header__logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .c-header__description {
+    display: none;
+  }
+}
+
+@include mq($from: tablet, $until: desktop) {
+  .c-header__links {
+    margin: inuit-rem($inuit-global-spacing-unit) inuit-rem($inuit-global-spacing-unit-small);
+  }
+}
+
+
+
+.c-responsive-toggle {
+  font-size: 2rem;
+  color: $color-secondary;
+}
+
+.c-flag {
+  border: none;
+  @include mq($from: tablet) {
+    line-height: 1.15;
+    padding: $inuit-global-spacing-unit-tiny/2;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.41);
+    font-size: 0.9rem;
+  }
+}
+

@@ -1,0 +1,173 @@
+/* ==========================================================================
+   #BUTTONS
+   ========================================================================== */
+
+/**
+ * This is an example component. Extend inuitcss by building your own components
+ * that make up your UI. Component classes are prefixed with a `c-`.
+ */
+
+/**
+ * 1. Allow us to style box model properties.
+ * 2. Line different sized buttons up a little nicer.
+ * 3. Make buttons inherit font styles (often necessary when styling `input`s as
+ *    buttons).
+ * 4. Reset/normalize some styles.
+ * 5. Force all button-styled elements to appear clickable.
+ */
+
+.c-btn {
+  display: inline-block; /* [1] */
+  vertical-align: middle; /* [2] */
+  font: inherit; /* [3] */
+  text-align: center; /* [4] */
+  margin: 0; /* [4] */
+  cursor: pointer; /* [5] */
+  padding: inuit-rem($inuit-global-spacing-unit) inuit-rem($inuit-global-spacing-unit-large);
+  transition: $global-transition;
+  border-radius: $global-radius;
+  border: solid 1px rgba(1, 1, 1, 0);
+  line-height: 1.15;
+}
+
+/* Style variants
+   ========================================================================== */
+
+.c-btn--primary {
+  background-color: $color-primary;
+
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none; /* [4] */
+    color: #fff;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: darken($color-primary, 10);
+  }
+
+}
+
+.c-btn--secondary {
+  background-color: $color-secondary;
+
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: darken($color-secondary, 10);;
+  }
+
+}
+
+.c-btn--secondary--dark {
+  background-color: darken($color-secondary, 20);
+
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: darken($color-secondary, 30);
+  }
+
+}
+
+.c-btn--dark-rounded {
+  background-color: darken($color-secondary, 20);
+  border-radius: 3.5rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    color: $color-lightest-grey;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: darken($color-secondary, 30);
+  }
+}
+
+.c-btn--success {
+  background-color: $color-success;
+
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    color: white;
+  }
+
+  &:hover,
+  &:focus {
+  }
+
+}
+
+.c-btn--ghost {
+  border-color: $color-light-grey;
+}
+
+.c-btn--loadmore {
+  border-radius: 3.5rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.08rem;
+  padding: inuit-rem($inuit-global-spacing-unit-tiny) inuit-rem($inuit-global-spacing-unit-large);
+  text-transform: uppercase;
+}
+
+.c-btn--secondary--invert {
+  background: none;
+  color: $color-secondary-font;
+  font-weight: 600;
+  border-color: rgba(0, 0, 0, 0);
+
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+  }
+
+  &:hover,
+  &:focus {
+    background: none;
+    color: $color-black;
+  }
+}
+
+/* Size variants
+   ========================================================================== */
+
+.c-btn--tiny {
+  padding: inuit-rem($inuit-global-spacing-unit-tiny) inuit-rem($inuit-global-spacing-unit);
+}
+
+.c-btn--small {
+  padding: inuit-rem($inuit-global-spacing-unit-small) inuit-rem($inuit-global-spacing-unit);
+}
+
+.c-btn--large {
+  padding: inuit-rem($inuit-global-spacing-unit-large) inuit-rem($inuit-global-spacing-unit-huge);
+}
+

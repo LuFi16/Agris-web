@@ -1,0 +1,30 @@
+{
+  "name": "lato-fontface",
+  "version": "2.0.0",
+  "description": "Lato @font-face kit",
+  "homepage": "https://github.com/yvh/lato-fontface#readme",
+  "authors": [
+    "Yannick Vanhaeren <yannick.vanhaeren@gmail.com>"
+  ],
+  "main": [
+    "./build/lato.css",
+    "./fonts/**/*"
+  ],
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "2.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.0.0",
+    "commit": "a3488033d8a56d9cf3cfdc668e13124dfd5d7bad"
+  },
+  "_source": "https://github.com/yvh/lato-fontface.git",
+  "_target": "^2.0.0",
+  "_originalSource": "lato-fontface"
+}

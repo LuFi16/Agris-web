@@ -1,0 +1,54 @@
+
+// variables
+$link-color: $color-primary;
+$link-bg-hover: #f20081;
+$link-bg-active: adjust-hue($link-bg-hover, -136%);
+
+
+// pagination styles
+.c-pagination {
+  text-align: center;
+  font-weight: bold;
+  margin-top:inuit-rem($inuit-global-spacing-unit);
+
+  a {
+    padding: 8px 16px;
+    border: 1px solid $color-light-grey;
+    border-radius: 3px;
+    color: $link-color;
+    text-decoration: none;
+    display: inline-block;
+
+    &:hover {
+      color: white;
+      background-color: $color-primary;
+    }
+
+    &.c-pagination--active {
+      color: white;
+      background-color: $color-primary;
+      &:hover { cursor: default; }
+    }
+  }
+
+  .c-pagination--prev {
+    &:before {
+      content: "« ";
+      font-weight: normal;
+    }
+  }
+
+  .c-pagination--next {
+    &:after {
+      content: " »";
+      font-weight: normal;
+    }
+  }
+
+  .c-pagination--next, .c-pagination--prev {
+    &:hover {
+      color: white;
+      background-color: $color-primary;
+    }
+  }
+}

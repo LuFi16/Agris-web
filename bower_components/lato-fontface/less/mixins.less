@@ -1,0 +1,8 @@
+.font-definition(@lato-path, @lato-version, @font-type:"Regular") {
+  src: url("@{lato-path}/@{font-type}/Lato-@{font-type}.eot?v=@{lato-version}");
+  src: url("@{lato-path}/@{font-type}/Lato-@{font-type}.eot?#iefix&v=@{lato-version}") format("embedded-opentype"),
+    url("@{lato-path}/@{font-type}/Lato-@{font-type}.woff2?v=@{lato-version}") format("woff2"),
+    url("@{lato-path}/@{font-type}/Lato-@{font-type}.woff?v=@{lato-version}") format("woff"),
+    url("@{lato-path}/@{font-type}/Lato-@{font-type}.ttf?v=@{lato-version}") format("truetype");
+  text-rendering: optimizeLegibility;
+}

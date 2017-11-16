@@ -1,0 +1,42 @@
+{
+  "name": "lato-fontface",
+  "version": "2.0.0",
+  "description": "Lato @font-face kit",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yvh/lato-fontface.git"
+  },
+  "keywords": [
+    "lato",
+    "fontface",
+    "woff",
+    "otf",
+    "ttf",
+    "eot",
+    "less",
+    "sass",
+    "scss"
+  ],
+  "author": "Yannick Vanhaeren <yannick.vanhaeren@gmail.com>",
+  "contributors": [
+    {
+      "name": "Yannick Vanhaeren <yannick.vanhaeren@gmail.com>"
+    }
+  ],
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "bugs": {
+    "url": "https://github.com/yvh/lato-fontface/issues"
+  },
+  "homepage": "https://github.com/yvh/lato-fontface#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-if": "^2.0.0",
+    "gulp-less": "^3.0.5",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.2.0",
+    "gulp-uglifycss": "^1.0.6",
+    "gulp-watch": "^4.3.5",
+    "yargs": "^4.2.0"
+  }
+}

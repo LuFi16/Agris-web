@@ -1,0 +1,147 @@
+.c-box {
+  padding: inuit-rem($inuit-global-spacing-unit) 0;
+}
+
+.c-box.col-desktop-4 {
+  @include mq($from: desktop) {
+    padding-right: inuit-rem($inuit-global-spacing-unit);
+    padding-left: inuit-rem($inuit-global-spacing-unit);
+  }
+}
+
+.c-box__inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: white;
+  box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.25);
+}
+
+.c-box__header {
+  height: 3rem;
+  flex-grow: inherit;
+  background-color: $color-secondary;
+  padding: inuit-rem($inuit-global-spacing-unit-tiny) inuit-rem($inuit-global-spacing-unit);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .c-box__heading, .c-box__icons a {
+    color: white;
+  }
+}
+
+.c-box__icons {
+  font-size: 1.2rem;
+  font-weight: 300;
+  .fa-arrows {
+    font-size: 1.8rem;
+  }
+}
+
+.c-box__heading {
+  font-size: 1.2rem;
+  margin: 0;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.c-box--events {
+  .o-flag__img {
+    width: 4.6rem;
+    height: 4.6rem;
+    border-radius: 50%;
+    background-color: $color-blue;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+  }
+  .o-flag__body {
+    padding-left: inuit-rem($inuit-global-spacing-unit-small);
+  }
+}
+
+.c-article {
+  flex-grow: 1;
+  display: block;
+  padding: inuit-rem($inuit-global-spacing-unit) inuit-rem($inuit-global-spacing-unit);
+  &:not(:last-child) {
+    border-bottom: 1px solid $color-light-grey;
+  }
+}
+
+.c-article--loadmore {
+  height: 3rem;
+  flex-grow: inherit;
+  font-weight: 600;
+  padding: inuit-rem($inuit-global-spacing-unit-small);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  &:hover,
+  &:active,
+  &:focus {
+    background: $color-secondary;
+    .c-article__more {
+      color: white;
+    }
+  }
+}
+
+.c-article__heading {
+  font-size: 1.1rem;
+  color: $color-secondary-font;
+  margin: 0;
+  line-height: 1.7rem;
+}
+
+.c-article__time {
+  color: $color-blue;
+  font-weight: 600;
+}
+
+.c-article__more {
+  color: $color-black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.c-article__more--bottom {
+  display: block;
+  font-size: 1.5rem;
+  padding-top: inuit-rem($inuit-global-spacing-unit);
+}
+
+.c-article__source {
+  font-weight: 300;
+}
+
+.c-article__logo {
+  height: 10rem;
+}
+
+.c-article--main {
+  background-position: center center;
+  background-size: cover;
+  padding: 0;
+
+  .c-article__inner {
+    background-color: rgba(0, 0, 0, 0.6);
+
+    color: white;
+    padding: inuit-rem($inuit-global-spacing-unit);
+  }
+  .c-article__heading {
+    font-size: 1.2rem;
+    margin: 0;
+    color: white;
+  }
+  .c-article__text {
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+}
+
+

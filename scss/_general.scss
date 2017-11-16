@@ -1,0 +1,32 @@
+body{
+  font-family: Lato, Helvetica, serif;
+}
+
+a {
+  color:inherit;
+  text-decoration: none;
+}
+p a {
+  text-decoration: underline;
+}
+
+.color--primary {
+  color: $color-primary;
+}
+.color--secondary {
+  color: $color-secondary;
+}
+.color--success {
+  color: $color-success;
+}
+
+/////Text alignes
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}

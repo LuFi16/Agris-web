@@ -1,0 +1,69 @@
+.c-information-list {
+  .o-flag__img > *{
+    max-height: 8rem;
+  }
+  .c-form {
+    display: flex;
+    width:50%;
+    margin:0 auto;
+    margin-bottom:inuit-rem($inuit-global-spacing-unit);
+  }
+}
+
+.c-article {
+  flex-grow: 1;
+  display: block;
+  padding: inuit-rem($inuit-global-spacing-unit) inuit-rem($inuit-global-spacing-unit);
+  &:not(:last-child) {
+    border-bottom: 1px solid $color-light-grey;
+  }
+}
+.c-article--loadmore {
+  height: 3rem;
+  flex-grow: inherit;
+  font-weight: 600;
+  padding: inuit-rem($inuit-global-spacing-unit-small);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  &:hover,
+  &:active,
+  &:focus {
+    background: $color-secondary;
+    .c-article__more {
+      color: white;
+    }
+  }
+}
+.c-article__heading {
+  font-size: 1.1rem;
+  color: $color-secondary-font;
+  margin: 0;
+  line-height: 1.7rem;
+}
+
+.c-article__time {
+  color: $color-blue;
+  font-weight: 600;
+}
+
+.c-article__more {
+  color: $color-black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.c-article__more--bottom {
+  display: block;
+  font-size: 1.5rem;
+  padding-top: inuit-rem($inuit-global-spacing-unit);
+}
+
+.c-article__source {
+  font-weight: 300;
+}
+
+.c-article__logo {
+  height: 10rem;
+}

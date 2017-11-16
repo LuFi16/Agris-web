@@ -1,0 +1,22 @@
+.c-projects-carousel {
+  .c-projects-carousel__item +
+  .c-projects-carousel__item{
+      display:none;
+      @include mq($from: tablet){
+        display:block;
+      }
+    }
+}
+
+
+.c-projects-carousel__link {
+  display: inline-block;
+  padding:0 inuit-rem($inuit-global-spacing-unit-small);
+  background-color: color-alpha(white,1);
+  border-radius: 50%;
+  width:10rem;
+  height:10rem;
+  line-height: 10rem;
+  overflow: hidden;
+  margin:0 auto;
+}

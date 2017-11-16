@@ -1,0 +1,28 @@
+{
+  "name": "eagri1",
+  "description": "Prezentační varianta eAGRI",
+  "main": "index.html",
+  "keywords": [
+    "eagri"
+  ],
+  "authors": [
+    "Ing. Jan Masner"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "inuitcss": "^6.0.0-beta.4",
+    "components-font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "flexboxgrid-sass": "^8.0.5",
+    "lato-fontface": "^2.0.0"
+  }
+}

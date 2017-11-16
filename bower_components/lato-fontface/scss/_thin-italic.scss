@@ -1,0 +1,7 @@
+@font-face{
+  font-family: "Lato";
+  font-weight: 200;
+  font-style: italic;
+  font-stretch: normal;
+  @include font-definition($lato-path, $lato-version, "ThinItalic");
+}
