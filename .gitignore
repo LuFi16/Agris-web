@@ -59,3 +59,4 @@ fabric.properties
 .idea/vcs.xml
 .idea/watcherTasks.xml
 bower_components/sass-mq/scripts/
+/Agris-web/.idea/*
